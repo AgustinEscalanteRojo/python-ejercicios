@@ -1,0 +1,6 @@
+Mi nombre es Agustin
+Mi apellido es Moure
+35años
+Y mi lenguaje preferido es Python
+Aunque tambien me gusta Javascript
+Y Swift
