@@ -56,9 +56,14 @@ import csv
 
 csv_file = open("Intermediate/my_file.csv", "w+")
 
+csv_writer = csv.writer(csv_file)
+csv_writer.writerow(["name", "surname", "age", "language", "website"])
+csv_writer.writerow(["Brais", "Moure", 35, "Python", "https://moure.dev"])
+csv_writer.writerow(["Roswell", "", 2, "COBOL", ""])
 
+csv_file.close()
 
-with open("Intermediate/my_file.csv", "r") as my_other_file:
+with open("Intermediate/my_file.csv") as my_other_file:
     for line in my_other_file.readlines():
         print(line)
 
